@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent {
-
 }
