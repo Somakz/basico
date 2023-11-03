@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./switch.component.css']
 })
 export class SwitchComponent {
-  dia:number=9
+  dia:string = ''
 }
