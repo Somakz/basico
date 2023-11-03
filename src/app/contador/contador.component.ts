@@ -7,13 +7,13 @@ import { Persona } from '../persona';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent {
-  protected numero: number = 0;
+  numero: number = 0;
 
-  public incrementar(){
+  incrementar(){
     this.numero++
   }
 
-  public decrementar(){
+  decrementar(){
     this.numero--
   }
 }

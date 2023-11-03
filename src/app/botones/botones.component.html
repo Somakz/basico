@@ -1,0 +1,36 @@
+<!-- <div>
+    <button [class.disabled]="!button_disabled" class="btn btn-warning mx-2 mb-2" (click)="text_color = 'text-warning'">Color amarillo</button>
+    
+    <button [class]="{
+        'disabled': !button_disabled,
+        'btn': true,
+        'btn-primary': true,
+        'mx-2': true,
+        'mb-2': true
+    }" (click)="text_color = 'text-primary'">Color azul</button>
+    
+    <button [ngClass]="{
+        'disabled': !button_disabled,
+        'btn': true,
+        'btn-danger': true,
+        'mx-2': true,
+        'mb-2': true
+    }" (click)="text_color = 'text-danger'">Color rojo</button>
+</div>
+
+<div>
+    <button [disabled]="!button_disabled" class="btn btn-warning mx-2 mb-2" (click)="text_color = 'text-warning'">Color amarillo</button>
+    <button [disabled]="!button_disabled" class="btn btn-primary mx-2 mb-2" (click)="text_color = 'text-primary'">Color azul</button>
+    <button [disabled]="!button_disabled" class="btn btn-danger mx-2 mb-2" (click)="text_color = 'text-danger'">Color rojo</button>
+</div>
+
+<span [class]="text_color">Texto que va a cambiar de color<br></span>
+
+<button class="btn btn-secondary mt-2" (click)="button_disabled=!button_disabled">Activar/Desactivar</button> -->
+
+<div>
+    <button class="btn btn-primary" (click)="img = 'https://media.istockphoto.com/id/515746042/es/foto/naturaleza-muerta-cráneo-humano-y-los-huesos-genocidios-concepto.jpg?s=1024x1024&w=is&k=20&c=yjpsVdHbd-1OH6P4hviPvnSdOrLPLkiK_-YhQGw1FRo='">Imagen 1</button>
+    <button class="btn btn-danger" (click)="img = 'https://images.pexels.com/photos/3800021/pexels-photo-3800021.jpeg'">Imagen 2</button>
+</div>
+
+<img [src]="img" alt="">
